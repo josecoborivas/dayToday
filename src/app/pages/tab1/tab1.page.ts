@@ -10,7 +10,7 @@ import { Article } from '../../intefaces/interfaces';
 export class Tab1Page implements OnInit {
 
   noticias: Article[]= [];
-
+  
   constructor(private noticiasService: NoticiasService) {}
 
   ngOnInit(){
