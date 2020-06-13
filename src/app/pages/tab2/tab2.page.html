@@ -1,16 +1,20 @@
 <ion-header [translucent]="true" color="dark">
   <ion-toolbar color="dark">
-    <ion-title>
-      Titulares
+    <ion-title slot="start" class="ion-no-padding">
+      <ion-img src="./assets/images/logo.png" class="logo"></ion-img>
     </ion-title>
   </ion-toolbar>
-  <ion-segment scrollable mode="md" color="primary">
-    <ion-segment-button [value]="categoria" mode="md" *ngFor="let categoria of categorias">
-      <ion-label text-capitalize>{{categoria}}</ion-label>
+  <ion-segment
+   scrollable
+   mode="md"
+   color="primary"
+   (ionChange)="cambioCategoria($event)">
+    <ion-segment-button [value]="categoria.name" mode="md" *ngFor="let categoria of categorias">
+      <ion-label text-capitalize>{{categoria.title}}</ion-label>
     </ion-segment-button>
   </ion-segment>
 </ion-header>
 
 <ion-content [fullscreen]="true" color="dark">
- 
+  <app-noticias [noticias]="noticias"></app-noticias>
 </ion-content>
