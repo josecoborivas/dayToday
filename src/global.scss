@@ -38,3 +38,18 @@
     width: 100%;
     height: 37px;
 }
+.action-dark, .action-sheet-group{
+    background-color:  var(--ion-color-dark) !important;
+    color: white !important;
+}
+
+.action-dark{
+    color: white !important;
+}
+
+.ios .action-sheet-icon{
+    display: none;
+}
+.action-sheet-icon{
+    color:white !important;
+}
