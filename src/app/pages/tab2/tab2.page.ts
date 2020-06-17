@@ -3,6 +3,7 @@ import { IonSegment } from '@ionic/angular';
 import { NoticiasService } from '../../services/noticias.service';
 import { Article } from '../../intefaces/interfaces';
 
+
 @Component({
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
